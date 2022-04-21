@@ -12,29 +12,29 @@ pool:
 stages:
  - stage: Build
    jobs:
-   - job1: FirstJob
+   - job: FirstJob
      steps:
      - bash: echo Build FirstJob
-   - job2: SecondJob
+   - job: SecondJob
      steps:
      - bash: echo Build SecondJob
  - stage: DevDeploy
    jobs:
-   - job1: FirstJob
+   - job: FirstJob
      steps:
      - bash: echo DevDeployJob
  - stage: QADeploy
    jobs:
-   - job1: FirstJob
+   - job: FirstJob
      steps:
      - bash: echo QADeployJob
  - stage: ProdDeploy
    jobs:
-    - job1: FirstJob
+    - job: FirstJob
       steps:
        - bash: echo ProdDeployJob
 
-steps:
+steps: |
 - script: echo Job1 Step1!
   displayName: 'Run a one-line script'
 
