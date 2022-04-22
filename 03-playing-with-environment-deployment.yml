@@ -15,6 +15,10 @@ trigger:
 pool:
   vmImage: $(operatingSystem)
 
+steps:
+- script: echo running on $(operatingSystem)
+  displayName: 'Run a one-line script'
+
 stages:
 - stage: Build
   jobs:
@@ -39,8 +43,4 @@ stages:
         deploy:
           steps:
           - script: echo deploy to QA
-
-steps:
-- script: echo running on $(operatingSystem)
-  displayName: 'Run a one-line script'
 
