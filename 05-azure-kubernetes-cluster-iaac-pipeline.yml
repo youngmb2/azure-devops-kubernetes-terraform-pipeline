@@ -27,7 +27,7 @@ steps:
     backendAzureRmResourceGroupName: 'terraform-backend-rg'
     backendAzureRmResourceGroupLocation: 'eastus'
     backendAzureRmStorageAccountName: 'storageaccountterraform8355'
-    backendAzureRmContainerName: 'strorageaccountterrafromcontainer'
+    backendAzureRmContainerName: 'strorageaccountterraformcontainer'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
     allowTelemetryCollection: true
 - task: TerraformCLI@0
