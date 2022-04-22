@@ -13,11 +13,7 @@ trigger:
 #     mac:
 #       operatingSystem: macos-latest
 pool:
-  vmImage: $(operatingSystem)
-
-steps:
-- script: echo running on $(operatingSystem)
-  displayName: 'Run a one-line script'
+  vmImage: ubuntu-latest
 
 stages:
 - stage: Build
