@@ -13,7 +13,7 @@ trigger:
 #     mac:
 #       operatingSystem: macos-latest
 pool:
-  vmImage: ubuntu-latest
+  vmImage: macos-latest
 
 stages:
 - stage: Build
