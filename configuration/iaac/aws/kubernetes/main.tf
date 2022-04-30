@@ -38,13 +38,10 @@ module "in28minutes-cluster" {
 
   #vpc_id         = "vpc-1234556abcdef"
 
-  node_groups = [
+  worker_groups = [
     {
       instance_type = "t2.micro"
-      max_capacity  = 5
-      desired_capacity = 3
-      min_capacity  = 3
-    }
+      asg_max_size = 3
   ]
 }
 
