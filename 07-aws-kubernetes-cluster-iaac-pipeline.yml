@@ -17,6 +17,12 @@ steps:
     backendServiceAWS: 'aws-for-terraform'
     backendAWSBucketName: 'bucket-cste2'
     backendAWSKey: 'kubernetes-dev.tfstate'
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'aws'
+    command: 'apply'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/aws/kubernetes'
+    environmentServiceNameAWS: 'aws-for-terraform'
 # init - backend
 # apply
 # new
