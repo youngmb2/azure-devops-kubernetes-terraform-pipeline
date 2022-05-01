@@ -1,7 +1,7 @@
 variable client_id {}
 variable client_secret {}
 variable ssh_public_key {}
-
+# the above are set in variables in azure devops pipelines
 variable environment {
     default = "dev"
 }
