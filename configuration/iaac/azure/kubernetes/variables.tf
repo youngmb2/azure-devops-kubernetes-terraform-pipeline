@@ -1,7 +1,8 @@
 variable client_id {}
 variable client_secret {}
 variable ssh_public_key {}
-# the above are set in variables in azure devops pipelines
+# the above client are set in variables in azure devops pipelines
+# You can add the ssh public key to libraries then secure files (azure.rsa.pub)
 variable environment {
     default = "dev"
 }
